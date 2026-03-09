@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "a61c0abf-21af-47db-a76d-769905e4f88a",
+    });
+  });
+</script>
 <head>
   <meta charset="UTF-8">
   <title>GitHub Pages teszt</title>
