@@ -1,19 +1,90 @@
+
+1
+<?xml version="1.0" encoding="UTF-8" ?>
+2
 <!DOCTYPE html>
-<html>
-  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-<script>
-  window.OneSignalDeferred = window.OneSignalDeferred || [];
-  OneSignalDeferred.push(async function(OneSignal) {
-    await OneSignal.init({
-      appId: "a61c0abf-21af-47db-a76d-769905e4f88a",
-    });
-  });
-</script>
+3
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.3.0' expr:class='data:blog.languageDirection' expr:dir='data:blog.languageDirection' expr:lang='data:blog.localeUnderscoreDelimited' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+4
+<b:include name='theme-dark-mode'/>
+5
 <head>
-  <meta charset="UTF-8">
-  <title>GitHub Pages teszt</title>
-</head>
-<body>
-  <h1>Sikeresen létrehoztad az első GitHub Pages fájlodat!</h1>
-</body>
-</html>
+6
+<b:include name='theme-head'/>
+7
+<b:if cond='!data:view.isLayoutMode'>
+8
+<!-- Theme CSS Style -->
+9
+<b:skin version='1.3.0'><![CDATA[/*
+10
+-----------------------------------------------
+11
+Blogger Template Style
+12
+Name:         LiteSpot
+13
+License:      Premium Version
+14
+Version:      2.0
+15
+Author:       Templateify
+16
+Author Url:   https://www.templateify.com/
+17
+-----------------------------------------------*/
+18
+​
+19
+/*
+20
+<!-- Variable definitions -->
+21
+<Variable name="keycolor" description="Main Color" type="color" default="#1A73E8" value="#1A73E8"/>
+22
+<Group description="Theme Options">
+23
+    <Variable name="darkmode" description="Native Dark Mode" type="length" default="0px" min="0px" max="1px" value="0px"/>
+24
+    <Variable name="userdarkmode" description="User Dark Mode" type="length" default="1px" min="0px" max="1px" value="1px"/>
+25
+    <Variable name="fixedmenu" description="Fixed Menu" type="length" default="1px" min="0px" max="1px" value="1px"/>
+26
+    <Variable name="sidebar" description="Left Sidebar" type="length" default="0px" min="0px" max="1px" value="0px"/>
+27
+    <Variable name="fixedsidebar" description="Fixed Sidebar" type="length" default="1px" min="0px" max="1px" value="1px"/>
+28
+</Group>
+29
+<Group description="Theme Widths">
+30
+    <Variable name="boxed" description="Boxed Mode" type="length" default="0px" min="0px" max="1px" value="0px"/>
+31
+    <Variable name="row.width" description="Container Width" type="length" default="1058px" min="970px" max="1094px" value="1058px"/>
+32
+    <Variable name="sidebar.width" description="Sidebar Width" type="length" default="300px" min="250px" max="336px" value="310px"/>
+33
+</Group>
+34
+<Group description="Theme Fonts">
+35
+    <Variable name="main.font" description="Site Font" type="font" family="Raleway" default="normal 400 14px $(family)" value="normal 400 14px $(family)"/>
+36
+    <Variable name="menu.font" description="Menu Font" type="font" family="Raleway" default="normal 400 14px $(family)" value="normal 400 14px $(family)"/>
+37
+    <Variable name="title.font" description="Title Font" type="font" family="Raleway" default="normal 400 14px $(family)" value="normal 400 14px $(family)"/>
+38
+    <Variable name="text.font" description="Text Font" type="font" family="Raleway" default="normal 400 14px $(family)" value="normal 400 14px $(family)"/>
+39
+</Group>
+40
+<Group description="Background">
+41
+    <Variable name="background.color" description="Body Background" type="color" default="#F1F3F4"  value="#F1F3F4"/>
+42
+    <Variable name="body.background" description="Background" type="background" color="$(background.color)" default="$(color) none repeat fixed top left" value="$(color) none repeat fixed top left"/>
+43
+    <Variable name="outer.bg" description="Outer Background" type="color" default="#FFFFFF"  value="#FFFFFF"/>
+44
+    <Variable name="outer.mobile.bg" description="Outer Mobile Background" type="color" default="#F1F3F4"  value="#F1F3F4"/>
+Sablon: Sablon szerkesztése
